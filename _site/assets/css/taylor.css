@@ -1,0 +1,282 @@
+/*
+ * Taylor Plumbing Stylesheet
+ */
+/*
+ * Main Header
+ */
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #DDD; }
+
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: white;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  background: #020031;
+  background: -moz-linear-gradient(45deg, #020031 0%, #00a0d1 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #00a0d1));
+  background: -webkit-linear-gradient(45deg, #020031 0%, #00a0d1 100%);
+  background: -o-linear-gradient(45deg, #020031 0%, #00a0d1 100%);
+  background: -ms-linear-gradient(45deg, #020031 0%, #00a0d1 100%);
+  background: linear-gradient(45deg, #020031 0%, #6d3353 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020031', endColorstr='#00A0D1',GradientType=1 );
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2), inset 0 -3px 7px rgba(0, 0, 0, 0.2); }
+
+.jumbotron h1 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1; }
+
+.subhead p {
+  margin-bottom: 20px; }
+
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px; }
+
+/*
+ * Contact
+ */
+.taylor-contact {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  color: white; }
+  .taylor-contact ul {
+    list-style-type: none;
+    font-weight: bold; }
+
+/*
+ * Sidebar
+ */
+.taylor-sidenav {
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065); }
+
+.taylor-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0; }
+
+.taylor-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px; }
+
+.taylor-sidenav > li > a {
+  display: block;
+  width: 190px 9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #E5E5E5; }
+
+.taylor-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.1); }
+
+.taylor-sidenav li i {
+  float: right; }
+
+.affix {
+  position: fixed;
+  width: 260px;
+  top: 10px; }
+
+/*
+ * Page Content
+ */
+section.taylor-page img {
+  height: 160px;
+  width: 160px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+/*
+ * Footer
+ */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
+  background-color: whiteSmoke; }
+
+.footer-links li {
+  display: inline;
+  padding: 0 20px; }
+
+/*
+ * Adjustments For Screen Size
+ */
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+    position: relative; }
+
+  .span9 {
+    width: 700px; }
+
+  .span3 {
+    width: 220px; }
+
+  .taylor-contact {
+    top: 20px; }
+
+  .taylor-sidenav {
+    width: 220px; }
+
+  .taylor-sidenav > li > a {
+    width: 220px \9;
+    /* Override the previous IE8-9 hack */ } }
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  /* When affixed, space properly */
+  .taylor-sidenav {
+    top: 0;
+    width: 218px;
+    margin-top: 30px;
+    margin-right: 0; } }
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0; }
+
+  .taylor-contact {
+    top: 60px; }
+
+  /* Adjust sidenav width */
+  .taylor-sidenav {
+    width: 166px;
+    margin-top: 20px; }
+
+  .taylor-sidenav.affix {
+    top: 0; } }
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0; }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block; }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    text-align: center;
+    font-size: 45px; }
+
+  .jumbotron p {
+    text-align: center; }
+
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px; }
+
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto; }
+
+  /* Sidenav */
+  .taylor-sidenav {
+    width: auto;
+    margin-bottom: 20px; }
+
+  .taylor-sidenav.affix {
+    position: static;
+    width: auto;
+    top: 0; }
+
+  /* Fix Contact Bar */
+  .taylor-contact {
+    position: relative;
+    right: 0;
+    top: 0;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px; }
+
+  .taylor-contact ul li {
+    text-align: center; }
+
+  /* Unfloat the back to top link in footer */
+  .footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .footer p {
+    margin-bottom: 9px; } }
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  /* Remove padding above jumbotron */
+  body {
+    padding-top: 0; }
+
+  /* Change up some type stuff */
+  h2 small {
+    display: block; }
+
+  /* Downsize the jumbotrons */
+  .jumbotron h1 {
+    font-size: 45px; }
+
+  .jumbotron p,
+  .jumbotron .btn {
+    font-size: 18px; }
+
+  .jumbotron .btn {
+    display: block;
+    margin: 0 auto; }
+
+  /* Fix Contact Bar */
+  .taylor-contact {
+    position: relative;
+    right: 0;
+    top: 0;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px; }
+
+  .taylor-contact ul li {
+    text-align: center; }
+
+  /* center align subhead text like the masthead */
+  .subhead h1,
+  .subhead p {
+    text-align: center; }
+
+  /* Tighten up footer */
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px; } }

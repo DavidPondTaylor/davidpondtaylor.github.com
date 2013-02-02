@@ -1,0 +1,12 @@
+markdown: rdiscount
+pygments: true
+auto: true
+server: true
+
+permalink: /:title
+
+production_url: http://danknox.github.com/taylor.com
+
+author:
+  name: Dave Taylor
+  email: dave.pond.taylor@gmail.com

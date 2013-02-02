@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <section class="taylor-page" id="{{ post.page_id }}">
+    <div class="page-header">
+      <h1>{{ post.title }}</h1>
+    </div>
+    <p class="lead">{{ post.description }}</p>
+    <p>{{ post.content }}</p>
+  </section>
+{% endfor %}
