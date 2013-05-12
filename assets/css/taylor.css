@@ -1,0 +1,121 @@
+/*
+ * Taylor Built Stylesheet
+ */
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 860px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.content-wrapper {
+  margin-top: 160px;
+  position: relative;
+}
+
+/* Main Navigation */
+.taylor-logo {
+  color: black;
+}
+
+.masthead {
+  position: fixed;
+  width: 860px;
+  padding-top: 20px;
+  top: 0px;
+  display: block;
+  z-index: 1;
+  background-color: white;
+}
+
+.masthead hr:last-child {
+  margin-bottom: 0px;
+}
+
+#main-navigation {
+  margin-top: 10px;
+}
+
+/* Contact Information */
+.taylor-contact {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.taylor-contact li {
+  list-style-type: none;
+  float: left;
+  margin-right: 60px;
+}
+
+.taylor-contact li:last-child {
+  margin-right: 0px;
+}
+
+/* Introduction / Home */
+.taylor-introduction {
+  text-align: justify;
+}
+
+.jumbotron {
+  margin: 60px 0;
+}
+.jumbotron h1 {
+  font-size: 72px;
+  line-height: 1;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.well.well-transparent {
+  background-color: transparent;
+}
+
+.well-large {
+  padding: 24px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.marketing {
+  margin: 60px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+img.taylor-van {
+  height: 420px;
+  width: 860px;
+  margin-bottom: 20px;
+}
+
+/* Page Content */
+
+.taylor-page ul {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.taylor-page ul li {
+  margin-bottom: 10px;
+}
+
+.taylor-page .img-polaroid.taylor-page-image {
+  width: 549px;
+  height: 420px;
+  max-width: none;
+}

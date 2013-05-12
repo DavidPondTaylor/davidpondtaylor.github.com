@@ -8,6 +8,15 @@ layout: default
       <h1>{{ post.title }}</h1>
     </div>
     <p class="lead">{{ post.description }}</p>
-    <p>{{ post.content }}</p>
+    <div class="row">
+      <div class="span3">
+        {{ post.content }}
+      </div>
+      <div class="span5">
+        {% for img_src in post.images %}
+          <img src="/assets/img/{{ img_src }}" class="img-polaroid taylor-page-image">
+        {% endfor %}
+      </div>
+    </div>
   </section>
 {% endfor %}

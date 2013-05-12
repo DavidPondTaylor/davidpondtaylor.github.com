@@ -24,51 +24,45 @@
     <!-- Taylor JS -->
     <script type="text/javascript" src="/assets/js/taylor.js"></script>
   </head>
-  <body data-spy="scroll" data-target=".taylor-sidebar">
+  <body data-spy="scroll" data-target="#header" data-offset="0">
 
-    <!-- Main Intro Header -->
-    <header class="jumbotron subhead" id="overview">
-      <div class="container">
-        <h1>Taylor Plumbing</h1>
-        <p class="lead">{% include introduction.html %}</p>
+    <div class="container-narrow">
 
-        {% include contact.html %}
-      </div>
-    </header>
-
-    <!-- Side Navigation Bar -->
-    <div class="container">
-      <div class="row">
-        <div class="span3 taylor-sidebar">
-          <ul class="nav nav-list taylor-sidenav">
-            <li><a href="#overview"><i class="icon-chevron-right"></i> Home</a></li>
-            {% for post in site.posts %}
-            <li><a href="#{{ post.page_id }}"><i class="icon-chevron-right"></i> {{ post.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="span9">
-
-          <!-- Main Content -->
-          {{ content }}
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>
-        <ul class="footer-links">
+      <div class="masthead" id="header">
+        <ul id="main-navigation" class="nav nav-pills pull-right">
+          <li class="active"><a href="#home">Home</a></li>
           {% for post in site.posts %}
           <li><a href="#{{ post.page_id }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
-        </p>
-        <p>Copyright &copy 2013 David Taylor</p>
+        <h3 class="taylor-logo">Taylor Built</h3>
+        <hr>
+        {% include contact.html %}
+        <hr>
       </div>
-    </footer>
 
-  </body>
+
+      <div class="content-wrapper">
+        <div id="home" class="jumbotron">
+          <p>
+            <img class="taylor-van" src="/assets/img/van.JPG" alt="Taylor Plumbing">
+          </p>
+          <p class="well well-large well-transparent taylor-introduction">
+            <i class="icon-quote-left icon-4x pull-left icon-muted"></i>
+            {% include introduction.html %}
+          </p>
+        </div>
+
+        {{ content }}
+
+        <hr>
+
+        <div class="footer">
+          <p>&copy; Taylor Built 2013</p>
+        </div>
+
+      </div> <!-- /content-wrapper -->
+    </div> <!-- /container -->
+
+</body>
 </html>

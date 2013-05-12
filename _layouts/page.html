@@ -7,5 +7,14 @@ layout: default
     <h1>{{ page.title }}</h1>
   </div>
   <p class="lead">{{ page.description }}</p>
-  <p>{{ content }}</p>
+  <div class="row">
+    <div class="span3">
+      {{ content }}
+    </div>
+    <div class="span4">
+      {{ for img_src in page.images }}
+      <img src="/assets/img/{{ img_src }}" class="img-polaroid taylor-page-image">
+      {{ endfor }}
+    </div>
+  </div>
 </section>
