@@ -3,7 +3,7 @@ pygments: true
 
 permalink: /:title
 
-production_url: http://davidpondtaylor.github.com
+production_url: http://taylorbilt.com
 
 author:
   name: Dave Taylor
