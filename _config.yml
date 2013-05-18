@@ -1,11 +1,9 @@
 markdown: rdiscount
 pygments: true
-auto: true
-server: true
 
 permalink: /:title
 
-production_url: http://danknox.github.com/taylor.com
+production_url: http://davidpondtaylor.github.com
 
 author:
   name: Dave Taylor
